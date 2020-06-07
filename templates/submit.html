@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if msg %}
+<p>{{ msg }}</p>
+{% end %}
+
+{% if username %}
+<p>{{ username }} had logined</p>
+
+{% else %}
+<form action="/sub" enctype="multipart/form-data" method="post">
+    <input type="text" name="username">
+    <input type="password" name="password">
+    <input type="hidden" name="next_url" value="{{ next_url }}">
+    <input type="submit">
+
+</form>
+{% end %}
+
+{% end %}
+
+

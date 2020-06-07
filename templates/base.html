@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}default title{% end %}</title>
+</head>
+<body>
+{{ datetime.datetime.now() }}<br>
+{% block content %}
+
+{% end %}
+</body>
+</html>

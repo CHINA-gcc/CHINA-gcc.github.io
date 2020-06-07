@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}template page{% end %}
+
+{% autoescape None %}
+
+{% block content %}
+{% if username %}
+Welcome to {{username}} to login!
+{% end %}
+{{ 1 + 1 * 4 }}
+{% if username=='gcc'%}
+{{ datetime.datetime.now() }}
+{% end %}
+{{! 1 + 1 * 4 }}
+{# 1 + 1 * 4 #}
+{#! 1 + 1 * 4 #}
+<br>
+{% raw atag %}
+{{ atag }}
+
+{{ escape(atag)}}
+
+{% end %}

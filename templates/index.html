@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title}
+index page
+{% end %}
+{% block content %}
+I am index page!
+{% if current_user %}
+<p>{{ current_user }} had logined</p>
+{% else %}
+Please login!
+
+{% end %}
+{% end %}
+{% end %}
