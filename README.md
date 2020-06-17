@@ -10,6 +10,7 @@ This github item mainly records some cases、basic code instructions and For ref
 - [Tornado_frame](https://github.com/CHINA-gcc/CHINA-gcc.github.io/tree/Tornado_frame)
 - [Spider](https://github.com/CHINA-gcc/CHINA-gcc.github.io/tree/Spider)
 ### Git
+
 - Global configuration
 ```python
 > git config --global user.name '...'
@@ -21,7 +22,7 @@ Configure personal information to remove --global.
 ```python
 > git pull(execute command: git remote add <name,default is origin> <ssh_code>)
 > git remote -v
->git remote rm <name, default is origin>         # Delete remote warehouse connections.
+> git remote rm <name, default is origin>(Delete remote warehouse connections.)
 > git reflog(view history) | git log
 ```
 - Branch
