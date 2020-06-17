@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+## Welcome to Gcc's github project.
+You can use the command('git clone' or 'git pull') to get source code[source code](https://github.com/CHINA-gcc/CHINA-gcc.github.io).
 
-You can use the [editor on GitHub](https://github.com/CHINA-gcc/CHINA-gcc.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This github item mainly records some cases、basic code instructions and For reference only.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Catalogs of Branch
+[master](https://github.com/CHINA-gcc/CHINA-gcc.github.io/tree/master)
+[DataBase](https://github.com/CHINA-gcc/CHINA-gcc.github.io/tree/Database)
+[Django_frame](https://github.com/CHINA-gcc/CHINA-gcc.github.io/tree/Django_frame)
+[Tornado_frame](https://github.com/CHINA-gcc/CHINA-gcc.github.io/tree/Tornado_frame)
+[Spider](https://github.com/CHINA-gcc/CHINA-gcc.github.io/tree/Spider)
+### Git
+- Global configuration
+```python
+git config --global user.name '...'
+git config --global user.email '...'
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Configure personal information to remove --global.
+```
+- Connection
+```python
+git pull(execute command: git remote add <name,default is origin> <ssh_code>)
+git remote -v
+git remote rm <name, default is origin>         # Delete remote warehouse connections.
+git reflog(view history) | git log
+```
+- Branch
+```python
+> git branch -a(查看远程、本地分支)
+> git checkout -b <本地分支, 创建并切换> | git branch <本地分支, 创建> | git checkout <本地分支, 创建>
+> git push --set-upstream origin/<remote_branch_name> <local_branch_name>(设置远程为本地分支的 upstream-branch)
+> git push <name, default is origin> <local_branch_name>
+> git reset --hard HEAD(current version) / HEAD^(脱字符) / 版本号
+```
+- Contrast
+```python
+git diff HEAD --demo.py                      # Workspace with warehouse.
+git diff HEAD HEAD^ -- demo.py               # Local warehouse version codes.
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CHINA-gcc/CHINA-gcc.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### concluding remarks
