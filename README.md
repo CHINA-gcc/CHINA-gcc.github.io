@@ -12,17 +12,17 @@ This github item mainly records some cases、basic code instructions and For ref
 ### Git
 - Global configuration
 ```python
-git config --global user.name '...'
-git config --global user.email '...'
+> git config --global user.name '...'
+> git config --global user.email '...'
 
 Configure personal information to remove --global.
 ```
 - Connection
 ```python
-git pull(execute command: git remote add <name,default is origin> <ssh_code>)
-git remote -v
-git remote rm <name, default is origin>         # Delete remote warehouse connections.
-git reflog(view history) | git log
+> git pull(execute command: git remote add <name,default is origin> <ssh_code>)
+> git remote -v
+>git remote rm <name, default is origin>         # Delete remote warehouse connections.
+> git reflog(view history) | git log
 ```
 - Branch
 ```python
