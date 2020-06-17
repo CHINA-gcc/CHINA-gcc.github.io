@@ -9,14 +9,13 @@ This github item mainly records some cases、basic code instructions and For ref
 - [Django_frame](https://github.com/CHINA-gcc/CHINA-gcc.github.io/tree/Django_frame)
 - [Tornado_frame](https://github.com/CHINA-gcc/CHINA-gcc.github.io/tree/Tornado_frame)
 - [Spider](https://github.com/CHINA-gcc/CHINA-gcc.github.io/tree/Spider)
-### Git
 
+### Git
 - Global configuration
 ```python
 > git config --global user.name '...'
-> git config --global user.email '...'
-
-Configure personal information to remove --global.
+> git config --global user.emil '...'
+> Configure personal information to remove --global.
 ```
 - Connection
 ```python
